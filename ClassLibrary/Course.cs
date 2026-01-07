@@ -16,7 +16,10 @@ namespace ClassLibrary
         //navigation property to represent relationship between Course and Student
         public ICollection<Student> Students { get; set; }
 
-        //navigation property to represent relationship between Course and Lecturers
-        public ICollection<Lecturer> Lecturers { get; set; }
+        //navigation property for lecturer
+        public Lecturer Lecturer { get; set; }
+
+        //foreign key for lecturer
+        public int LecturerID { get; set; }
     }
 }
